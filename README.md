@@ -1,4 +1,4 @@
-# Iterative Learning For Robust Voice Conversion
+# Demo of D3VC
 
 Audio Example for VC comversion.
 
