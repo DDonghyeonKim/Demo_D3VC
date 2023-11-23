@@ -1,10 +1,10 @@
 Example of Voice Conversion
 
-<h3 id="many-to-many-conversion">Many-to-Many Conversion</h3>
+<h3 id="D3VC voice conversion">D3VC voice conversion</h3>
 
 <p> The converted samples are used to evalute MOS test .</p>
 
-<h4 id="Seen-to-Seen">Seen to Seen</h4>
+<h4 id="any-to-any vc (VCTK)">any-to-any vc</h4>
 
 <table>
   <thead>
@@ -12,250 +12,66 @@ Example of Voice Conversion
       <th style="text-align: center"> </th>
       <th style="text-align: center">Source</th>
       <th style="text-align: center">Target</th>
-      <th style="text-align: center">StarGANv2-VC_clean</th>
-      <th style="text-align: center">Ours_clean</th>
-      <th style="text-align: center">StarGANv2-VC_Noisy</th>
-      <th style="text-align: center">Ours_Noisy</th>
+      <th style="text-align: center">VQVC+</th>
+      <th style="text-align: center">Again-VC</th>
+      <th style="text-align: center">VQMIVC</th>
+      <th style="text-align: center">Diff-VC</th>
+      <th style="text-align: center">D3VC</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align: center"><strong>ex1</strong></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/s2s/p225_010.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/s2s/p256_010_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/s2s/p225_010_p256_273N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/s2s/p225_010_p256_273N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/s2s/p225_010_p256_273N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/s2s/p225_010_p256_273N.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex1/src.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex1/trg.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex1/vqvc_p.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex1/againvc.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex1/vqmivc.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex1/diffvc.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex1/D3VC.wav" />&lt;/source&gt; </audio></td>
     </tr>
     <tr>
       <td style="text-align: center"><strong>ex2</strong></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/s2s/p225_010.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/s2s/p275_010_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/s2s/p225_010_p275_405N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/s2s/p225_010_p275_405N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/s2s/p225_010_p275_405N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/s2s/p225_010_p275_405N.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex2/src.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex2/trg.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex2/vqvc_p.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex2/againvc.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex2/vqmivc.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex2/diffvc.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex2/D3VC.wav" />&lt;/source&gt; </audio></td>
     </tr>
     <tr>
       <td style="text-align: center"><strong>ex3</strong></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/s2s/p228_024.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/s2s/p239_024_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/s2s/p228_024_p239_490N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/s2s/p228_024_p239_490N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/s2s/p228_024_p239_490N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/s2s/p228_024_p239_490N.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex3/src.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex3/trg.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex3/vqvc_p.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex3/againvc.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex3/vqmivc.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex3/diffvc.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex3/D3VC.wav" />&lt;/source&gt; </audio></td>
     </tr>
     <tr>
       <td style="text-align: center"><strong>ex4</strong></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/s2s/p249_109.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/s2s/p267_014_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/s2s/p249_109_p267_224N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/s2s/p249_109_p267_224N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/s2s/p249_109_p267_224N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/s2s/p249_109_p267_224N.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex4/src.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex4/trg.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex4/vqvc_p.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex4/againvc.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex4/vqmivc.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex4/diffvc.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex4/D3VC.wav" />&lt;/source&gt; </audio></td>
     </tr>
         <tr>
       <td style="text-align: center"><strong>ex5</strong></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/s2s/p250_195.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/s2s/p264_025_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/s2s/p250_195_p264_250N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/s2s/p250_195_p264_250N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/s2s/p250_195_p264_250N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/s2s/p250_195_p264_250N.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex5/src.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex5/trg.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex5/vqvc_p.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex5/againvc.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex5/vqmivc.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex5/diffvc.wav" />&lt;/source&gt; </audio></td>
+      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="VC_demo/ex5/D3VC.wav" />&lt;/source&gt; </audio></td>
     </tr>
-        </tr>
-      <td style="text-align: center"><strong>ex6</strong></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/s2s/p251_111.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/s2s/p274_111_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/s2s/p251_111_p274_203N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/s2s/p251_111_p274_203N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/s2s/p251_111_p274_203N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/s2s/p251_111_p274_203N.wav" />&lt;/source&gt; </audio></td>
-      </tr>
-        </tr>
-      <td style="text-align: center"><strong>ex7</strong></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/s2s/p253_192.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/s2s/p246_006_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/s2s/p253_192_p246_008N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/s2s/p253_192_p246_008N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/s2s/p253_192_p246_008N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/s2s/p253_192_p246_008N.wav" />&lt;/source&gt; </audio></td>
-      </tr>
-        </tr>
-      <td style="text-align: center"><strong>ex8</strong></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/s2s/p259_028.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/s2s/p253_026_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/s2s/p259_028_p253_142N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/s2s/p259_028_p253_142N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/s2s/p259_028_p253_142N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/s2s/p259_028_p253_142N.wav" />&lt;/source&gt; </audio></td>
-      </tr>
-        </tr>
-      <td style="text-align: center"><strong>ex9</strong></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/s2s/p259_041.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/s2s/p228_022_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/s2s/p259_041_p228_061N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/s2s/p259_041_p228_061N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/s2s/p259_041_p228_061N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/s2s/p259_041_p228_061N.wav" />&lt;/source&gt; </audio></td>
-      </tr>
-        </tr>
-      <td style="text-align: center"><strong>ex10</strong></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/s2s/p260_093.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/s2s/p271_093_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/s2s/p260_093_p271_041N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/s2s/p260_093_p271_041N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/s2s/p260_093_p271_041N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/s2s/p260_093_p271_041N.wav" />&lt;/source&gt; </audio></td>
-      </tr>
-        </tr>
-      <td style="text-align: center"><strong>ex11</strong></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/s2s/p270_403.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/s2s/p259_386_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/s2s/p270_403_p259_072N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/s2s/p270_403_p259_072N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/s2s/p270_403_p259_072N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/s2s/p270_403_p259_072N.wav" />&lt;/source&gt; </audio></td>
-      </tr>
-        </tr>
-      <td style="text-align: center"><strong>ex12</strong></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/s2s/p278_068.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/s2s/p269_151_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/s2s/p278_068_p269_211N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/s2s/p278_068_p269_211N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/s2s/p278_068_p269_211N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/s2s/p278_068_p269_211N.wav" />&lt;/source&gt; </audio></td>
-      </tr>
   </tbody>
 </table>
 
-
-
-<h4 id="Unseen-to-Seen">Unseen to Seen</h4>
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center"> </th>
-      <th style="text-align: center">Source</th>
-      <th style="text-align: center">Target</th>
-      <th style="text-align: center">StarGANv2-VC_clean</th>
-      <th style="text-align: center">Ours_clean</th>
-      <th style="text-align: center">StarGANv2-VC_Noisy</th>
-      <th style="text-align: center">Ours_Noisy</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center"><strong>ex1</strong></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/u2s/p287_040.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/u2s/p254_042_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/u2s/p287_040_p254_046N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/u2s/p287_040_p254_046N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/u2s/p287_040_p254_046N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/u2s/p287_040_p254_046N.wav" />&lt;/source&gt; </audio></td>
-    </tr>
-    <tr>
-      <td style="text-align: center"><strong>ex2</strong></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/u2s/p288_274.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/u2s/p229_005.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/u2s/p288_274_p229_365N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/u2s/p288_274_p229_365N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/u2s/p288_274_p229_365N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/u2s/p288_274_p229_365N.wav" />&lt;/source&gt; </audio></td>
-    </tr>
-    <tr>
-      <td style="text-align: center"><strong>ex3</strong></td>
-<td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/u2s/p298_028.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/u2s/p249_022_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/u2s/p298_028_p249_220N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/u2s/p298_028_p249_220N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/u2s/p298_028_p249_220N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/u2s/p298_028_p249_220N.wav" />&lt;/source&gt; </audio></td>
-    
-    </tr>
-    <tr>
-      <td style="text-align: center"><strong>ex4</strong></td>
-<td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/u2s/p302_079.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/u2s/p268_026_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/u2s/p302_079_p268_394N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/u2s/p302_079_p268_394N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/u2s/p302_079_p268_394N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/u2s/p302_079_p268_394N.wav" />&lt;/source&gt; </audio></td>
-    
-    </tr>
-        <tr>
-      <td style="text-align: center"><strong>ex5</strong></td>
-<td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/u2s/p304_272.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/u2s/p241_004_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/u2s/p304_272_p241_118N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/u2s/p304_272_p241_118N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/u2s/p304_272_p241_118N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/u2s/p304_272_p241_118N.wav" />&lt;/source&gt; </audio></td>
-    
-    </tr>
-        </tr>
-      <td style="text-align: center"><strong>ex6</strong></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/u2s/p307_418.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/u2s/p276_036_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/u2s/p307_418_p276_268N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/u2s/p307_418_p276_268N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/u2s/p307_418_p276_268N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/u2s/p307_418_p276_268N.wav" />&lt;/source&gt; </audio></td>
-      </tr>
-        </tr>
-      <td style="text-align: center"><strong>ex7</strong></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/u2s/p317_039.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/u2s/p256_021_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/u2s/p317_039_p256_142N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/u2s/p317_039_p256_142N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/u2s/p317_039_p256_142N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/u2s/p317_039_p256_142N.wav" />&lt;/source&gt; </audio></td>      </tr>
-        </tr>
-      <td style="text-align: center"><strong>ex8</strong></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/u2s/p318_104.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/u2s/p228_100_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/u2s/p318_104_p228_226N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/u2s/p318_104_p228_226N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/u2s/p318_104_p228_226N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/u2s/p318_104_p228_226N.wav" />&lt;/source&gt; </audio></td>
-      </tr>
-        </tr>
-      <td style="text-align: center"><strong>ex9</strong></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/u2s/p318_209.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/u2s/p233_043_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/u2s/p318_209_p233_351N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/u2s/p318_209_p233_351N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/u2s/p318_209_p233_351N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/u2s/p318_209_p233_351N.wav" />&lt;/source&gt; </audio></td>
-      </tr>
-        </tr>
-      <td style="text-align: center"><strong>ex10</strong></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/u2s/p323_040.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/u2s/p274_086_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/u2s/p323_040_p274_009N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/u2s/p323_040_p274_009N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/u2s/p323_040_p274_009N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/u2s/p323_040_p274_009N.wav" />&lt;/source&gt; </audio></td>
-      </tr>
-        </tr>
-      <td style="text-align: center"><strong>ex11</strong></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/u2s/p343_033.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/u2s/p252_083_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/u2s/p343_033_p252_359N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/u2s/p343_033_p252_359N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/u2s/p343_033_p252_359N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/u2s/p343_033_p252_359N.wav" />&lt;/source&gt; </audio></td>
-      </tr>
-        </tr>
-      <td style="text-align: center"><strong>ex12</strong></td>
-       <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Source2/u2s/p374_113.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/GT/u2s/p248_083_norm.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Clean/u2s/p374_113_p248_167N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Clean/u2s/p374_113_p248_167N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Baseline/Noise/u2s/p374_113_p248_167N.wav" />&lt;/source&gt; </audio></td>
-      <td style="text-align: center"><audio controls="controls">  <source type="audio/wav" src="TEST_audio/Proposed/Noise/u2s/p374_113_p248_167N.wav" />&lt;/source&gt; </audio></td>      </tr>
-  </tbody>
-</table>
 
 
